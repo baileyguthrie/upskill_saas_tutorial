@@ -9,6 +9,6 @@ class UsersController < ApplicationController
     
     # GET to /users
     def index
-        
+        @users = User.includes(:profile)
     end
 end
